@@ -4,17 +4,39 @@ var marker;
 var image="11.ico"
 
 
-$(function(){codeAddress()});
+// code for auto complete
+
+$(function(){ 
+
+
+
+  $("#city_country").geocomplete();
+
+
+  });
+
+   
+//$(function(){codeAddress()});
 
 codeAddress = function () {
+
+     
+        
+        $("#city_country").geocomplete();
+
     geocoder = new google.maps.Geocoder();
   
   var address = document.getElementById('city_country').value; //input box for search 
+    
+   
+   
+     
+       
 
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       map = new google.maps.Map(document.getElementById('mapCanvas'), {
-    zoom: 10,
+    zoom: 9,
             streetViewControl: false,
           mapTypeControlOptions: {
         style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
@@ -91,3 +113,16 @@ function updateMarkerAddress(str) {
   document.getElementById('address').innerHTML = str;
 }
 
+//default loding 
+function initialize() {
+        var mapCanvas = document.getElementById('mapCanvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(55.53715122136835, 9.67756625000004),
+          zoom: 7,
+            streetViewControl: false,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      
+google.maps.event.addDomListener(window, 'load', initialize);

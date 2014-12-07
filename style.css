@@ -1,6 +1,6 @@
 #mapCanvas {
-    width: 65%;
-    height: 60%;
+    width: 85%;
+    height: 58%;
    
   }
   #infoPanel {
@@ -11,28 +11,43 @@
     margin-bottom: 5px;
   }
 
+ #city_country{size:150;}
 
   body{
     background-color:#384047;
-    padding:"10";
+    
     font-size:1.25em;
     } 
 
-.data1{
-width:5em;
-} 
 
-.cont{  
-  margin: 30px auto 10px;
+
+table{  
+  background-color:#009688;
+  margin: 10px auto 10px;
   border-radius: 5px;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.8);
-} 
-.maindiv {
-  background: #fff;
-  display: block;
-  height:700px;
-  width: 1200px;
+  width: 45%;
+  height: 12%;
+  padding:15px;
+
+}
+
+#mapCanvas {  
+  background-color:#fff;
   margin: 30px auto 10px;
   border-radius: 5px;
-  box-shadow: 0 5px 2px 0 #222;
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 1);
+
+}
+
+h3{color: #fff;}
+.maindiv {
+  background: #3f51b5;,
+  
+  display: block;
+  height:95%;
+  width: 80%;
+  margin: 30px auto 10px;
+  border-radius: 5px;
+   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.8);
 }

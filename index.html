@@ -2,7 +2,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="style.css"></link>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries="></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="logic.js"></script>
 
@@ -10,26 +10,24 @@
 <body>
  
  <div class="maindiv ">  
-   <center>  <h2>Google API  with marker </h2>  
-        <div id="mapCanvas">       
-          </div><br/>  
-          <div id="panel">
-          <input id="city_country" type="textbox" value="Berlin, Germany">
-          <input type="button" value="Search" onclick="codeAddress()">
-	        <input type="button" value="Reset" onclick="codeAddress()"> <br/><br/>	 
-         </div>  
+   <center>  <br/> <h3>Google API  with marker </h3>  
+        <div id="mapCanvas"></div><br/>  
+         <input id="city_country" type="textbox" placeholder="Enter a location"  >
+          <input type="button" id="Search" value="Search" onclick="codeAddress()">
+          <input type="button" value="Reset" onclick="initialize()">
    
   
-     <table border="1px">
+     <table>
+       <tr> </tr>
        <tr><td><b>Marker status:</b></td><td><div id="markerStatus"><i>Click and drag the marker.</i></div></td></tr>
        <tr><td><b>Current position:</b> </td><td> <textarea rows="1" cols="40" id="info" ></textarea> <br/> </td></tr>
-       <tr><td> <b>Closest matching address:</b></td><td>	<textarea rows="1" cols="40" id="address" ></textarea> </td></tr>
+       <tr><td> <b>Closest matching address:</b></td><td>	<textarea rows="2" cols="40" id="address" ></textarea> </td></tr>
      </table>
    </center>
  </div>    
  
   
-
+<script src="jquery.geocomplete.js"></script>
 </body>
 </html>
 <!--language=hi " by appending language"-->
