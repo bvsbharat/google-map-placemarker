@@ -1,0 +1,38 @@
+#mapCanvas {
+    width: 65%;
+    height: 60%;
+   
+  }
+  #infoPanel {
+    float: left;
+    margin-left: 10px;
+  }
+  #infoPanel div {
+    margin-bottom: 5px;
+  }
+
+
+  body{
+    background-color:#384047;
+    padding:"10";
+    font-size:1.25em;
+    } 
+
+.data1{
+width:5em;
+} 
+
+.cont{  
+  margin: 30px auto 10px;
+  border-radius: 5px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.8);
+} 
+.maindiv {
+  background: #fff;
+  display: block;
+  height:700px;
+  width: 1200px;
+  margin: 30px auto 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 2px 0 #222;
+}
